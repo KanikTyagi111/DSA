@@ -23,14 +23,14 @@ void PreOrder(Node *root) {
     
 }
 
-void Inorder(Node *root) {
+void InOrder(Node *root) {
     if(root == NULL) {
         return;
     }
 
-    Inorder(root->left);
+    InOrder(root->left);
     cout<<root->data<<" ";
-    Inorder(root->right);
+    InOrder(root->right);
 }
 
 void PostOrder(Node *root) {
@@ -69,5 +69,17 @@ int main() {
     cout<<"Enter the root element : ";
     Node *root;
     root = binaryTree();
+
+    cout<<"PreOrder : ";
+    PreOrder(root);
+    cout<<endl;
+
+    cout<<"InOrder : ";
+    InOrder(root);
+    cout<<endl;
+
+    cout<<"PostOrder : ";
+    PostOrder(root);
+    
     return 0;
 }
