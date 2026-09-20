@@ -28,6 +28,16 @@ Node* insert(Node* root,int val) {
     return root;
 }
 
+void inorder(Node* root) {
+    if(root == NULL) {
+        return;
+    }
+
+    inorder(root->left);
+    cout<<root->data<<" ";
+    inorder(root->right);
+}
+
 int main() {
     int arr[] = {3,4,8,5,7,10};
 
@@ -35,6 +45,8 @@ int main() {
     for(int i=0; i<6; i++) {
         root = insert(root,arr[i]);
     }
+
+    inorder(root);
 
     return 0;
 }
