@@ -3,6 +3,13 @@
 // 3. Left side
 // 4. Right side
 
+
+// Time Complexity ------
+
+// Best/Avg Case   - TC : Nlogn, SC : logn
+// Worst Case      - TC : N2   , SC : N (When the given data is alreday sorted)
+
+
 #include<iostream>
 using namespace std;
 
