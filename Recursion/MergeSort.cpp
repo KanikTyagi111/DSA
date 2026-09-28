@@ -2,7 +2,7 @@
 
 // Time Complexity ------
 
-// Best/Avg/Worst Case   - TC : Nlogn, SC : logn
+// Best/Avg/Worst Case   - TC : Nlogn, SC : N
 
 #include<iostream>
 #include<vector>
