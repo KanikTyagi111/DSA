@@ -1,5 +1,9 @@
 // Divide and Conquer
 
+// Time Complexity ------
+
+// Best/Avg/Worst Case   - TC : Nlogn, SC : logn
+
 #include<iostream>
 #include<vector>
 using namespace std;
