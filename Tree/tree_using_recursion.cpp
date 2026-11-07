@@ -1,3 +1,6 @@
+// TC : O(n) worst case (when tree is growing only left side)
+// SC : O(n)
+
 #include<iostream>
 using namespace std;
 
