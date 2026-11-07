@@ -1,3 +1,6 @@
+// TC : O(n) worst case (when tree is growing only left side)
+// SC : O(n)
+
 #include<iostream>
 #include<queue>
 using namespace std;
@@ -24,6 +27,8 @@ int main() {
     while(!q.empty()) {
         Node *temp = q.front();
         q.pop();
+
+        
         cout<<"Enter left child of "<<temp->data<<" : ";
         cin>>leftChild;
         if(leftChild != -1) {
