@@ -38,15 +38,29 @@ void inorder(Node* root) {
     inorder(root->right);
 }
 
+bool search(Node* root, int target) {
+    if(!root)
+    return 0;
+
+    if(root->data == target)
+    return 1;
+
+    if(target < root->data)
+    return search(root->left,target);
+    else
+    return search(root->right,target);
+}
+
 int main() {
-    int arr[] = {3,4,8,5,7,10};
+    int arr[] = {3,7,4,1,6,8};
 
     Node* root = NULL;
     for(int i=0; i<6; i++) {
         root = insert(root,arr[i]);
     }
 
-    inorder(root);
+    cout<<search(root,16);
+    // inorder(root); // return sorted array
 
     return 0;
 }
